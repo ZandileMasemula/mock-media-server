@@ -67,7 +67,7 @@ app.delete('/songs/:id', (req, res) => {
   res.json(songs);
 });
 
-// 404 handler
+// 404 error handler
 app.use((req, res) => res.status(404).send("404: Route not found"));
 
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
